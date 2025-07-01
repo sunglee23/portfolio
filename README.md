@@ -44,13 +44,6 @@
 
 ---
 
-### 📊 GitHub Stats & Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sunglee23&show_icons=true&theme=tokyonight" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sunglee23&theme=tokyonight" height="165"/>
-</p>
-
 ---
 
 ### 🔎 Fun Facts
