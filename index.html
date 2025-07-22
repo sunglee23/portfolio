@@ -19,7 +19,7 @@
   <header class="text-center py-10 bg-white shadow">
     <img src="Profile1.jpg" alt="Sung Lee" class="rounded-full w-40 h-40 mx-auto shadow-xl mb-4" />
     <h1 class="text-4xl font-extrabold">Sung Lee</h1>
-    <p class="text-lg text-gray-600">Enterprise Business Analyst | Technical Writer SME | Federal Capture Support</p>
+    <p class="text-lg text-gray-600">Enterprise Business Analyst | Technical Writer SME | Strategic Proposal & Capture Analyst</p>
     <div class="mt-4">
       <a href="mailto:sung.m.lee23@gmail.com" class="text-blue-600 underline">sung.m.lee23@gmail.com</a> |
       <a href="https://www.linkedin.com/in/sungmlee" target="_blank" class="text-blue-600 underline">LinkedIn</a>
