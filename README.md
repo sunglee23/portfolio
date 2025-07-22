@@ -60,40 +60,39 @@
     </section>
   </main>
 
-<!-- Certifications & Awards Section -->
-<section id="certifications-awards" class="py-20 bg-gray-100">
+<!-- Certifications Section -->
+<section id="certifications" class="py-20 bg-gray-100">
   <div class="max-w-6xl mx-auto px-6">
 
-    <!-- Certifications -->
-    <h2 class="text-4xl font-bold text-blue-700 text-center mb-10">Certifications</h2>
+    <h2 class="text-4xl font-bold text-center text-blue-700 mb-10">Certifications</h2>
     <p class="text-lg text-gray-700 text-center mb-14">
       Recognized certifications validating my expertise in Agile methodologies, business analysis, and Microsoft platforms.
     </p>
 
-    <div class="grid md:grid-cols-3 gap-8 mb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
       
       <!-- ITIL Certification -->
-      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-        <img src="ITIL.png" alt="ITIL" class="h-16 mb-4">
-        <h3 class="text-xl font-semibold mb-2">ITIL Foundation in ITSM</h3>
-        <p class="text-gray-600 mb-4 text-sm">EXIN Certified in IT Service Management. Demonstrates foundational knowledge in improving IT delivery, proficiency, and stakeholder value.</p>
-        <a href="EXIN+-+AXELOS+zonder+EXP.pdf" target="_blank" class="text-blue-600 font-medium underline">View Credential</a>
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="ITIL.png" alt="ITIL Logo" class="h-16 mb-4 animate-fade-in">
+        <h3 class="text-xl font-semibold mb-2 text-blue-800">ITIL Foundation in ITSM</h3>
+        <p class="text-gray-600 mb-4 text-sm">EXIN Certified. Demonstrates foundational expertise in IT service delivery, efficiency, and stakeholder satisfaction.</p>
+        <a href="EXIN+-+AXELOS+zonder+EXP.pdf" target="_blank" class="text-blue-600 underline font-medium">View Credential</a>
       </div>
 
       <!-- MCTS Certification -->
-      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-        <img src="Microsoft.jpg" alt="Microsoft MCTS" class="h-16 mb-4">
-        <h3 class="text-xl font-semibold mb-2">Microsoft Certified Technology Specialist (MCTS)</h3>
-        <p class="text-gray-600 mb-4 text-sm">Microsoft Certified. Validates technical expertise in specific Microsoft products, such as Windows, SQL Server, and .NET frameworks.</p>
-        <a href="Sung Lee MCTS.pdf" target="_blank" class="text-blue-600 font-medium underline">View Credential</a>
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="Microsoft.jpg" alt="Microsoft MCTS" class="h-16 mb-4 animate-fade-in">
+        <h3 class="text-xl font-semibold mb-2 text-blue-800">Microsoft Certified Technology Specialist (MCTS)</h3>
+        <p class="text-gray-600 mb-4 text-sm">Microsoft Certified. Specializes in Windows, SQL Server, and .NET technical stack integration.</p>
+        <a href="Sung Lee MCTS.pdf" target="_blank" class="text-blue-600 underline font-medium">View Credential</a>
       </div>
 
       <!-- MCP Certification -->
-      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-        <img src="Microsoft.jpg" alt="Microsoft MCP" class="h-16 mb-4">
-        <h3 class="text-xl font-semibold mb-2">Microsoft Certified Professional (MCP)</h3>
-        <p class="text-gray-600 mb-4 text-sm">Microsoft Certified. Demonstrates foundational knowledge of Microsoft technologies and core IT solutions.</p>
-        <a href="Sung Lee MCP.pdf" target="_blank" class="text-blue-600 font-medium underline">View Credential</a>
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="Microsoft.jpg" alt="Microsoft MCP" class="h-16 mb-4 animate-fade-in">
+        <h3 class="text-xl font-semibold mb-2 text-blue-800">Microsoft Certified Professional (MCP)</h3>
+        <p class="text-gray-600 mb-4 text-sm">Microsoft Certified. Validates foundational IT knowledge in Microsoft technologies and infrastructure solutions.</p>
+        <a href="Sung Lee MCP.pdf" target="_blank" class="text-blue-600 underline font-medium">View Credential</a>
       </div>
 
     </div>
@@ -101,33 +100,63 @@
 </section>
 
 
-    <!-- Awards & Accomplishments -->
-    <h2 class="text-4xl font-bold text-blue-700 text-center mb-10">Awards & Accomplishments</h2>
+<!-- Awards & Accomplishments Section -->
+<section id="awards" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold text-center text-blue-700 mb-10">Awards & Accomplishments</h2>
     <p class="text-lg text-gray-700 text-center mb-14">
-      Recognitions that showcase my commitment to excellence in communication, recruiting, and public engagement.
+      Recognitions that highlight my impact, professionalism, and dedication across the federal IT and talent landscape.
     </p>
-    <div class="grid md:grid-cols-2 gap-10">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
       
-      <!-- Best Recruiter -->
-      <div class="bg-white rounded-xl shadow-md p-6 text-center">
-        <img src="Best Recruiter Badge 10-3-2019.png" alt="Best Recruiter Badge" class="w-32 h-32 mx-auto rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-semibold mb-2">Best Recruiter – ClearedJobs.Net</h3>
-        <p class="text-gray-700 mb-2">Voted top recruiter by job seekers at the October 3 Cleared Job Fair, Tysons Corner, VA.</p>
-        <p class="text-sm text-gray-500">Awarded by OBXtek / ClearedJobs.net – 2019</p>
-          <a href="https://clearedjobs.net/bestrecruiters/index-2019.html" target="_blank" class="text-blue-600 underline font-medium">
-         <a href="Best Recruiter Badge 10-3-2019.png" target="_blank" class="text-blue-600 underline">View Credential</a>
-      </div>
+<!-- Best Recruiter Award with Floating Emoji -->
+<div class="relative bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl border border-blue-100">
+
+  <!-- Floating Emoji -->
+  <div class="absolute -top-6 right-6 text-3xl animate-bounce drop-shadow-md">🏅</div>
+
+  <!-- Badge Image -->
+  <a href="https://clearedjobs.net/bestrecruiters/index-2019.html" target="_blank" class="group">
+    <div class="overflow-hidden rounded-full border-4 border-blue-300 shadow-xl transition-all duration-300 group-hover:shadow-blue-300">
+      <img 
+        src="Best%20Recruiter%20Badge%2010-3-2019.png" 
+        alt="Best Recruiter Badge" 
+        class="h-48 w-48 object-contain transform transition-transform duration-300 group-hover:scale-105"
+      >
+    </div>
+  </a>
+
+  <!-- Award Text -->
+  <h3 class="text-2xl font-extrabold mt-6 mb-2 text-blue-800">Best Recruiter – ClearedJobs.Net</h3>
+  <p class="text-base text-gray-700 mb-2">
+    Voted top recruiter by job seekers at the Cleared Job Fair (Tysons Corner, VA – October 3, 2019).
+  </p>
+  <p class="text-sm text-gray-500 mb-3">Awarded by OBXtek / ClearedJobs.net</p>
+
+  <!-- Link -->
+  <a 
+    href="https://clearedjobs.net/bestrecruiters/index-2019.html" 
+    target="_blank" 
+    class="text-blue-600 underline font-semibold hover:text-blue-800 transition"
+  >
+    View Official Recognition →
+  </a>
+</div>
+
 
       <!-- Certificate of Appreciation -->
-      <div class="bg-white rounded-xl shadow-md p-6 text-center">
-        <embed src="Certificate of Appreciation_Lee.pdf" type="application/pdf" class="w-full h-64 rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Certificate of Appreciation</h3>
-        <p class="text-gray-700 mb-2">Honored for professionalism and energy that enhanced the job fair experience.</p>
+      <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <embed src="Certificate%20of%20Appreciation_Lee.pdf" type="application/pdf" class="w-full h-64 rounded-xl mb-4 animate-fade-in" />
+        <h3 class="text-xl font-semibold mb-2 text-blue-800">Certificate of Appreciation</h3>
+        <p class="text-gray-700 mb-2 text-sm">
+          Recognized for delivering a highly engaging and professional candidate experience at the Cleared Job Fair.
+        </p>
         <p class="text-sm text-gray-500">Issued by ClearedJobs.net – 2019</p>
       </div>
 
     </div>
-
   </div>
 </section>
 
