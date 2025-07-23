@@ -1,290 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sung Lee | Business Analyst & Technical Writer</title>
-  <link href=https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css rel="stylesheet">
-  <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap rel="stylesheet">
-  <link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
+    }
+
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.375rem;
+      margin-left: 0.5rem;
     }
   </style>
 </head>
 
-
-
 <body class="bg-gray-50 text-gray-900">
-  <header class="text-center py-10 bg-white shadow">
-    <img src="Profile1.jpg" alt="Sung Lee" class="rounded-full w-40 h-40 mx-auto shadow-xl mb-4" />
-    <h1 class="text-4xl font-extrabold">Sung Lee</h1>
-    <p class="text-lg text-gray-600">Enterprise Business Analyst | Technical Writer SME | Strategic Proposal & Capture Analyst</p>
-    <div class="mt-4">
-      <a href="mailto:sung.m.lee23@gmail.com" class="text-blue-600 underline">sung.m.lee23@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/sungmlee" target="_blank" class="text-blue-600 underline">LinkedIn</a>
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky-nav py-4 px-6 flex justify-between items-center">
+    <div class="font-extrabold text-xl text-blue-800">Sung Lee</div>
+    <div class="space-x-4 hidden md:flex">
+      <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+      <a href="#resume" class="text-gray-700 hover:text-blue-600 font-medium">Resume</a>
+      <a href="#work" class="text-gray-700 hover:text-blue-600 font-medium">Portfolio</a>
+      <a href="#proposal-bid-efforts" class="text-gray-700 hover:text-blue-600 font-medium">Proposals</a>
+      <a href="#certifications" class="text-gray-700 hover:text-blue-600 font-medium">Certifications</a>
+      <a href="#education" class="text-gray-700 hover:text-blue-600 font-medium">Education</a>
+      <a href="#awards" class="text-gray-700 hover:text-blue-600 font-medium">Awards</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
     </div>
-  </header>
+  </nav>
 
+  <!-- Floating Resume Download Button -->
+  <a href="Sung_Lee_Resume_5_Tech_Writer_New_2025.pdf" download
+     class="floating-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition">
+    📄 Download Resume
+  </a>
 
-<!-- About Section -->
-<section id="about" class="py-20 bg-gradient-to-r from-indigo-50 to-blue-100" data-aos="fade-up">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-4xl font-bold mb-6 text-center text-indigo-900">🙋‍♂️ About Me</h2>
-    <p class="text-lg text-gray-800 leading-relaxed text-center">
-      I'm a <strong>Business Analyst</strong> and <strong>Technical Writer</strong> with over 5 years of experience supporting <strong>DoD</strong> and <strong>IRS</strong> programs.
-      I specialize in simplifying complex systems through clear documentation, 508-compliant UX, and strategic content design.
-    </p>
-    <p class="text-lg text-gray-800 mt-6 leading-relaxed text-center">
-      My work blends <em>design thinking, federal compliance, and technical clarity</em> to help agencies deliver user-first digital solutions.
-    </p>
-  </div>
-</section>
+  <!-- Hero / About Section -->
+  <section id="about" class="py-20 px-6 text-center bg-gradient-to-br from-blue-50 to-white" data-aos="fade-up">
+    <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Sung Lee</h1>
+    <p class="text-2xl font-medium text-gray-700">Business Analyst • Technical Writer • UX Content Strategist</p>
+    <p class="mt-4 max-w-2xl mx-auto text-gray-600">Delivering clear, accessible, and impactful documentation across federal IT, proposal, and UX platforms.</p>
+  </section>
 
-  
-  <main class="max-w-5xl mx-auto px-4 py-12">
-    <!-- Resume Snapshot -->
-    <section id="resume" class="mb-16" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-4">Resume Snapshot</h2>
-      <iframe src="Sung_Lee_Resume_5_Tech_Writer_New_2025.pdf" width="100%" height="500px" class="rounded-xl border shadow"></iframe>
-  
-    </section>
+  <!-- Resume Section -->
+  <section id="resume" class="py-12 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Resume Highlights</h2>
+    <ul class="list-disc pl-6 text-gray-800 space-y-2">
+      <li>Active IRS MBI Clearance</li>
+      <li>10+ years in Federal IT environments</li>
+      <li>Agile technical writing using Jira, Confluence, GitHub</li>
+      <li>508-compliant documentation and UX content strategy</li>
+    </ul>
+  </section>
 
-    
-
-
-  
-    <!-- Featured Work -->
-    <section id="work" class="mb-16" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-4">Featured Technical Writing and Agile Scrum Samples</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-xl font-semibold">IRS Power App Training Manual</h3>
-          <p class="text-gray-700 mb-2">Step-by-step training manual and user guide for federal onboarding. Includes screenshots, how-tos, and 508 standards.</p>
-          <a href="IRS_EFD_Training_Manual_Sample.pdf" target="_blank" class="text-blue-600 underline">View PDF</a>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-xl font-semibold">Sprint Planning & Backlog Management</h3>
-          <p class="text-gray-700 mb-2">Structured guidelines for managing Agile backlogs, sprint planning, and iteration review.</p>
-          <a href="Demand and Data Management Sprint_Backlog_IRS.pdf" target="_blank" class="text-blue-600 underline">View PDF</a>
-        </div>
+  <!-- Portfolio Section -->
+  <section id="work" class="py-12 px-6 bg-white" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Portfolio Samples</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+        <h3 class="font-semibold text-lg text-blue-800">IRS Front Door Training Manual</h3>
+        <p class="text-sm text-gray-600 mt-2">Power Apps role-based instructions for federal onboarding and user support.</p>
       </div>
-    </section>
-
-<!-- Hero Section -->
-<section id="hero">
-  <!-- Hero Content -->
-</section>
-
-<!-- About Me Section -->
-<section id="about">
-  <!-- About Content -->
-</section>
-
-<!-- Education Section -->
-<section id="education">
-  <!-- Education Content -->
-</section>
-
-
-    
-
-<!-- Proposal/Bid Efforts Section (Updated) -->
-<section id="proposal-bid-efforts" class="py-20 bg-gradient-to-r from-green-100 to-blue-200">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center text-green-900 mb-10">Proposal & Bid Efforts with OBXtek 📑</h2>
-    <p class="text-lg text-gray-800 text-center mb-14">
-      Samples and highlights of my experience leading and contributing to successful proposals and bids at OBXtek.
-    </p>
-
-    <div class="flex justify-center">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-      
-        <!-- Proposal 1 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-          <img src="OBXtek Logo.png"
-               alt="Proposal 1"
-               class="rounded-lg shadow-lg max-h-32 w-auto mb-4 object-contain mx-auto transition-transform duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold mb-2 text-green-800">Proposal for Federal Agency</h3>
-          <p class="text-gray-600 mb-4 text-sm">A snapshot proposal for a federal contract, focusing on technical writing, compliance, and coordination.</p>
-          <a href="PM FPS SETA Proposal_OBXtek Volume I.pdf" target="_blank" class="text-blue-600 underline font-medium hover:text-blue-800 transition">View Proposal</a>
-        </div>
-
-        <!-- Proposal 2 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-          <img src="Veterans Logo.jpg"
-               alt="Proposal 2"
-               class="rounded-lg shadow-lg max-h-32 w-auto mb-4 object-contain mx-auto transition-transform duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold mb-2 text-green-800">Proposal for Task Order</h3>
-          <p class="text-gray-600 mb-4 text-sm">A proposal sample prepared for a task order, highlighting experience in compliance documentation and proposal writing.</p>
-          <a href="Federal Communications Commission (FCC) PWS.pdf" target="_blank" class="text-blue-600 underline font-medium hover:text-blue-800 transition">View Proposal</a>
-        </div>
-
+      <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+        <h3 class="font-semibold text-lg text-blue-800">Proposal Compliance Toolkit</h3>
+        <p class="text-sm text-gray-600 mt-2">Live SharePoint templates, checklists, and writer workflows.</p>
       </div>
     </div>
-  </div>
-</section>
+    <p class="text-sm text-gray-500 mt-4">*508-compliant UX samples available upon request</p>
+  </section>
 
-
-
-    
-    
-<!-- Contact Section -->
-<section id="contact">
-  <!-- Contact Content -->
-</section>
-
-
-
+  <!-- Proposal Section -->
+  <section id="proposal-bid-efforts" class="py-12 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Proposal & Bid Efforts</h2>
+    <ul class="list-disc pl-6 text-gray-800 space-y-2">
+      <li>iCIMS Recruiting Pipeline Support <span class="badge">Real-time</span></li>
+      <li>SharePoint & Teams Collaboration</li>
+      <li>Compliance editing & annotated outlines</li>
+      <li>Capture analyst support & storyboard development</li>
+    </ul>
+  </section>
 
   <!-- Certifications Section -->
-<section id="certifications" class="py-20 bg-gradient-to-r from-blue-100 to-indigo-200">
-  <div class="max-w-6xl mx-auto px-6">
+  <section id="certifications" class="py-12 px-6 bg-white" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Certifications</h2>
+    <ul class="list-disc pl-6 text-gray-800 space-y-2">
+      <li>Master’s in Instructional Systems Design, George Mason University</li>
+      <li>Federal 508 Compliance & UX Writing Training</li>
+      <li>Certified Agile Proposal Writer (internal)</li>
+    </ul>
+  </section>
 
-    <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Certifications 🔖🎓🏅</h2>
-    <p class="text-lg text-gray-800 text-center mb-14">
-      These certifications validate my expertise in Agile methodologies, business analysis, and Microsoft platforms, underscoring my dedication to continuous professional growth.
-    </p>
+  <!-- Education Section -->
+  <section id="education" class="py-12 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Education</h2>
+    <p class="text-gray-800">M.Ed. in Instructional Systems Design, <strong>George Mason University</strong></p>
+  </section>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-      
-      <!-- ITIL Certification -->
-      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-        <img src="ITIL.png" alt="ITIL Logo" class="h-16 mb-4 animate-fade-in">
-        <h3 class="text-xl font-semibold mb-2 text-blue-800">ITIL Foundation in ITSM</h3>
-        <p class="text-gray-600 mb-4 text-sm">EXIN Certified. A proven foundation in IT service management, emphasizing efficiency, stakeholder alignment, and quality delivery.</p>
-        <a href="EXIN+-+AXELOS+zonder+EXP.pdf" target="_blank" class="text-blue-600 underline font-medium hover:text-blue-800 transition">View Credential</a>
-      </div>
-
-      <!-- MCTS Certification -->
-      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-        <img src="Microsoft.jpg" alt="Microsoft MCTS" class="h-16 mb-4 animate-fade-in">
-        <h3 class="text-xl font-semibold mb-2 text-blue-800">Microsoft Certified Technology Specialist (MCTS)</h3>
-        <p class="text-gray-600 mb-4 text-sm">Microsoft Certified. Expertise in integrating Windows, SQL Server, and .NET technologies for optimized performance and support.</p>
-        <a href="Sung Lee MCTS.pdf" target="_blank" class="text-blue-600 underline font-medium hover:text-blue-800 transition">View Credential</a>
-      </div>
-
-      <!-- MCP Certification -->
-      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-        <img src="Microsoft.jpg" alt="Microsoft MCP" class="h-16 mb-4 animate-fade-in">
-        <h3 class="text-xl font-semibold mb-2 text-blue-800">Microsoft Certified Professional (MCP)</h3>
-        <p class="text-gray-600 mb-4 text-sm">Microsoft Certified. Demonstrates deep knowledge of Microsoft technologies, with a focus on infrastructure solutions and troubleshooting.</p>
-        <a href="Sung Lee MCP.pdf" target="_blank" class="text-blue-600 underline font-medium hover:text-blue-800 transition">View Credential</a>
-      </div>
-
+  <!-- Awards Section -->
+  <section id="awards" class="py-12 px-6 bg-white" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Awards & Recognition</h2>
+    <div class="bg-yellow-50 p-6 rounded-xl shadow">
+      <h3 class="text-xl font-semibold text-yellow-700">🏆 Best Recruiter Award</h3>
+      <p class="text-sm text-gray-600">Recognized by OBXtek for federal proposal excellence and team support.</p>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 text-center bg-blue-50" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-blue-700">Contact</h2>
+    <p class="text-gray-800">📧 <a href="mailto:sung.m.lee23@gmail.com" class="text-blue-600 underline">sung.m.lee23@gmail.com</a></p>
+    <p class="text-gray-800">🔗 <a href="https://www.linkedin.com/in/sungmlee" target="_blank" class="text-blue-600 underline">linkedin.com/in/sungmlee</a></p>
+  </section>
 
-
-<!-- Education Section -->
-<section id="education" class="py-20 bg-gradient-to-r from-blue-100 to-indigo-200">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Education 🎓</h2>
-    <p class="text-lg text-gray-800 text-center mb-14">
-      Academic achievements that have shaped my expertise in instructional design and technology solutions.
-    </p>
-
-    <!-- Center the card if only one -->
-    <div class="flex justify-center">
-      <div class="bg-white rounded-xl shadow-lg p-6 max-w-xl w-full flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-        <h3 class="text-xl font-semibold mb-2 text-blue-800">Master of Science in Instructional Systems Design</h3>
-        <p class="text-gray-600 mb-4 text-sm">George Mason University (GMU) – <span class="font-bold text-blue-600">Graduated: 2014</span></p>
-        <p class="text-gray-700 mb-4">Focused on designing, developing, and implementing instructional systems for improved learning experiences in educational and organizational settings.</p>
-        <a href="https://cehd.gmu.edu/news/archives/highlights/instructional-design-students-show-off-real-world-apps" target="_blank" class="text-blue-600 underline font-medium hover:text-blue-800 transition">View Credential</a>
-
-        <!-- Graduation Image -->
-        <div class="mt-6 flex justify-center">
-          <img src="George Mason Masters Pic.jpg" alt="Graduation Picture" class="rounded-lg shadow-lg w-1/2 h-auto transition-transform duration-300 hover:scale-105">
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-  
-  
-<!-- Awards & Accomplishments Section -->
-<section id="awards" class="py-20 bg-gradient-to-l from-white to-blue-50">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <h2 class="text-4xl font-bold text-center text-blue-700 mb-10">Awards & Accomplishments</h2>
-    <p class="text-lg text-gray-700 text-center mb-14">
-      Recognitions that celebrate my dedication and impactful contributions within federal IT and recruitment sectors.
-    </p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-      
-      <!-- Best Recruiter Award with Floating Emoji -->
-      <div class="relative bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blue-200">
-        
-        <!-- Floating Emoji -->
-        <div class="absolute -top-6 right-6 text-4xl animate-bounce text-yellow-400">🏅</div>
-        
-        <!-- Badge Image -->
-        <a href="Best Recruiter Badge 10-3-2019.png" target="_blank" class="group">
-          <div class="overflow-hidden rounded-full border-4 border-blue-300 shadow-xl transition-all duration-300 group-hover:shadow-blue-500">
-            <img 
-              src="Best%20Recruiter%20Badge%2010-3-2019.png" 
-              alt="Best Recruiter Badge" 
-              class="h-48 w-48 object-contain transform transition-transform duration-300 group-hover:scale-110"
-            >
-          </div>
-        </a>
-        
-        <!-- Award Text -->
-        <h3 class="text-2xl font-extrabold mt-6 mb-2 text-blue-800">Best Recruiter – ClearedJobs.Net</h3>
-        <p class="text-base text-gray-700 mb-2">Voted top recruiter by job seekers at the Cleared Job Fair (Tysons Corner, VA – October 3, 2019).</p>
-        <p class="text-sm text-gray-500 mb-3">Awarded by OBXtek / ClearedJobs.net</p>
-
-        <!-- Link -->
-        <a 
-          href="https://clearedjobs.net/bestrecruiters/index-2019.html" 
-          target="_blank" 
-          class="text-blue-600 underline font-semibold hover:text-blue-800 transition"
-        >
-          View Official Recognition →
-        </a>
-      </div>
-
-      <!-- Certificate of Appreciation -->
-      <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-        <embed src="Certificate%20of%20Appreciation_Lee.pdf" type="application/pdf" class="w-full h-64 rounded-xl mb-4 animate-fade-in" />
-        <h3 class="text-xl font-semibold mb-2 text-blue-800">Certificate of Appreciation</h3>
-        <p class="text-gray-700 mb-2 text-sm">
-          Recognized for delivering a highly engaging and professional candidate experience at the Cleared Job Fair.
-        </p>
-        <p class="text-sm text-gray-500">Issued by ClearedJobs.net – 2019</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-    <!-- Call to Action -->
-    <section class="text-center mt-20">
-      <h2 class="text-3xl font-bold mb-4">Ready to collaborate?</h2>
-      <p class="text-lg mb-4">Let’s simplify, clarify, and win together.</p>
-      <a href="mailto:sung.m.lee23@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">📨 Contact Me</a>
-    </section>
-
-  </main>
-  
-  
-  <footer class="text-center py-6 text-sm text-gray-500">
-    © 2025 Sung Lee. Built with Tailwind CSS + GitHub Pages.
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 text-sm">
+    &copy; 2025 Sung Lee. All rights reserved.
   </footer>
 
+  <!-- Animate on Scroll Init -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
