@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,8 +26,7 @@
       <div class="space-x-6">
         <a href="#about" class="hover:text-blue-300" onclick="showSection('about')">About</a>
         <a href="#resume" class="hover:text-blue-300" onclick="showSection('resume')">Resume</a>
-        <a href="#work" class="hover:text-blue-300" onclick="showSection('work')">Work</a>
-        <a href="#proposal-bid-efforts" class="hover:text-blue-300" onclick="showSection('proposal-bid-efforts')">Proposals</a>
+        <a href="#work-proposal" class="hover:text-blue-300" onclick="showSection('work-proposal')">Work & Proposals</a>
         <a href="#certifications" class="hover:text-blue-300" onclick="showSection('certifications')">Certifications</a>
         <a href="#education" class="hover:text-blue-300" onclick="showSection('education')">Education</a>
         <a href="#awards" class="hover:text-blue-300" onclick="showSection('awards')">Awards</a>
@@ -78,11 +76,13 @@
     </div>
   </section>
 
-  <!-- Work Section -->
-  <section id="work" class="hidden-section py-20">
+  <!-- Work & Proposal/Bid Efforts Section -->
+  <section id="work-proposal" class="hidden-section py-20">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-4">Featured Technical Writing and Agile Scrum Samples</h2>
-      <div class="grid md:grid-cols-2 gap-6">
+      <h2 class="text-3xl font-bold mb-4 text-center">Featured Work & Proposal/Bid Efforts</h2>
+
+      <!-- Work Samples -->
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
         <div class="p-6 bg-white rounded-xl shadow">
           <h3 class="text-xl font-semibold">IRS Power App Training Manual</h3>
           <p class="text-gray-700 mb-2">Step-by-step training manual and user guide for federal onboarding. Includes screenshots, how-tos, and 508 standards.</p>
@@ -94,11 +94,27 @@
           <a href="Demand and Data Management Sprint_Backlog_IRS.pdf" target="_blank" class="text-blue-600 underline">View PDF</a>
         </div>
       </div>
+
+      <!-- Proposal/Bid Efforts -->
+      <h3 class="text-2xl font-semibold text-center mb-6">Proposal & Bid Efforts with OBXtek 📑</h3>
+      <p class="text-lg text-gray-800 text-center mb-14">Samples and highlights of my experience leading and contributing to successful proposals and bids at OBXtek.</p>
+      
+      <div class="grid sm:grid-cols-2 gap-10 mb-10">
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+          <h3 class="text-xl font-semibold text-green-800">Proposal for Federal Agency</h3>
+          <p class="text-gray-600 text-sm mb-4">A snapshot proposal for a federal contract, focusing on technical writing, compliance, and coordination.</p>
+          <a href="PM FPS SETA Proposal_OBXtek Volume I.pdf" target="_blank" class="text-blue-600 underline">View Proposal</a>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+          <h3 class="text-xl font-semibold text-green-800">Proposal for Task Order</h3>
+          <p class="text-gray-600 text-sm mb-4">A proposal sample prepared for a task order, highlighting experience in compliance documentation and proposal writing.</p>
+          <a href="Federal Communications Commission (FCC) PWS.pdf" target="_blank" class="text-blue-600 underline">View Proposal</a>
+        </div>
+      </div>
+
       <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition mt-6" onclick="goBack()">Back to Menu</button>
     </div>
   </section>
-
-  <!-- Other Sections (Proposal, Certifications, etc.) would follow similar structure -->
 
   <!-- Contact Section -->
   <section id="contact" class="hidden-section text-center py-20 bg-gradient-to-r from-blue-100 to-indigo-200">
@@ -125,7 +141,7 @@
       sections.forEach(section => {
         section.classList.add('hidden-section');
       });
-      
+
       // Show the selected section
       const activeSection = document.getElementById(sectionId);
       activeSection.classList.remove('hidden-section');
