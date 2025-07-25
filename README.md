@@ -72,21 +72,29 @@
 
     <div class="flex flex-col md:flex-row items-center md:items-start gap-10 bg-white p-6 rounded-xl shadow-lg">
       <!-- Profile Image -->
-      <img src="Profile1.jpg" alt="Sung Lee profile picture" class="w-40 h-40 object-cover rounded-full border-4 border-blue-500 shadow-md">
+      <div class="flex-shrink-0">
+        <img src="Profile1.jpg" alt="Sung Lee profile picture" class="w-40 h-40 object-cover rounded-full border-4 border-blue-500 shadow-md" />
+      </div>
 
-      <!-- Text Content -->
-      <div class="text-center md:text-left">
+      <!-- Text + Quote Content -->
+      <div class="flex-1 text-center md:text-left">
         <p class="text-lg text-gray-800 leading-relaxed">
           I'm a <strong>Business Analyst</strong> and <strong>Technical Writer</strong> with over 5 years of experience supporting <strong>DoD</strong> and <strong>IRS</strong> programs. I specialize in simplifying complex systems through clear documentation, 508-compliant UX, and strategic content design.
         </p>
         <p class="text-lg text-gray-800 mt-6 leading-relaxed">
           My work blends <em>design thinking, federal compliance, and technical clarity</em> to help agencies deliver user-first digital solutions.
+  </p>
+           <p class="text-lg text-gray-800 mt-6 leading-relaxed">
+          "A bad attitude is like a flat tire. You can't go anywhere until you change it" - Joyce Meyer
         </p>
-        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition mt-6" onclick="goBack()">Back to Menu</button>
+
+
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition mt-10" onclick="goBack()">Back to Menu</button>
       </div>
     </div>
   </div>
 </section>
+
 
   
 
@@ -111,7 +119,7 @@
         <div class="p-6 bg-white rounded-xl shadow">
           <h3 class="text-xl font-semibold">IRS Power App Training Manual</h3>
           <p class="text-gray-700 mb-2">Step-by-step training manual and user guide for federal onboarding. Includes screenshots, how-tos, and 508 standards.</p>
-          <a href="IRS_EFD_Training_Manual_Sample.pdf" target="_blank" class="text-blue-600 underline">View PDF</a>
+          <a href="IRS_EFD_Training_Manual_Sample Overview.pdf" target="_blank" class="text-blue-600 underline">View PDF</a>
         </div>
         <div class="p-6 bg-white rounded-xl shadow">
           <h3 class="text-xl font-semibold">Sprint Planning & Backlog Management</h3>
